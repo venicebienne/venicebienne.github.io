@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>My Little Phony</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Varela+Round&display=swap" rel="stylesheet">
+     
+     <style>
+         body {
+             background-color: #F4DCFF;
+         }
+         
+         .container {
+             margin-bottom: 50px;
+         }
+         
+         hr {
+             border-top: 10px solid #9F1483;
+             border-radius: 10px;
+         }
+         
+         @font-face { 
+             font-family: Equestria Regular; 
+             src: url('Equestria.otf'); 
+         }  
+         
+         h1 {
+            font-family: Equestria Regular;
+            font-size: 50px;
+             color: #401B58;
+         }
+         
+         @font-face { 
+             font-family: MLP; 
+             src: url('PONY - MLP 2 - Version 2.ttf'); 
+         }  
+         
+         h2 {
+            font-family: MLP;
+            font-size: 40px;
+             color: #401B58;
+             padding-top: 5px;
+         }  
+         
+         .form-label {
+             font-family: 'Patrick Hand', sans-serif;
+             font-size: 22px;
+         }
+         
+         .btn {
+             font-family: 'Varela Round', sans-serif;
+             background-color: #F20082;
+             padding-left: 25px;
+             padding-right: 25px;
+             border-style: none;
+             margin-top: 15px;
+             color: floralwhite;
+         }
+         
+         .btn:hover {
+             font-family: 'Varela Round', sans-serif;
+             background-color: #FD3F98;
+             padding-left: 25px;
+             padding-right: 25px;
+             border-style: none;
+             box-shadow: 0px 0px 5px #9F1483;
+             color: floralwhite;
+         }
+         
+         .btn:focus {
+             font-family: 'Varela Round', sans-serif;
+             background-color: #9F1483;
+             padding-left: 25px;
+             padding-right: 25px;
+             border-style: none;
+             box-shadow: 0px 0px 5px #9F1483;
+             color: floralwhite;
+         }
+         
+         .add_btn {
+             font-family: 'Varela Round', sans-serif;
+             background-color: #F20082;
+             padding-top: 10px;
+             padding-bottom: 10px;
+             border-style: none;
+             color: floralwhite;
+             width: 95%;
+             border-radius: 10px;
+             margin-left: 27px;
+             margin-right: 25px;
+             margin-top: 20px;
+         }
+         
+         .add_btn:hover {
+             font-family: 'Varela Round', sans-serif;
+             background-color: #FD3F98;
+             border-style: none;
+             box-shadow: 0px 0px 5px #9F1483;
+             color: floralwhite;
+         }
+         
+         .add_btn:focus {
+             font-family: 'Varela Round', sans-serif;
+             background-color: #9F1483;
+             border-style: none;
+             box-shadow: 0px 0px 5px #9F1483;
+             color: floralwhite;
+         }
+         
+         .form-control {
+             font-family: 'Varela Round', sans-serif;
+             border-width: 3px;
+             border-style: ridge;
+             border-color: #FD3F98;
+         }
+         
+         .form-control:focus {
+             font-family: 'Varela Round', sans-serif;
+             border-width: 3px;
+             border-style: ridge;
+             border-color: #FD3F98;
+         }
+         
+         table {
+             width: 100%;
+             margin-top: 40px;
+         }
+         
+         .other_friends {
+             margin-left: 20px;
+             margin-right: 20px;
+         }
+         
+         .col-sm-4 {
+             width: 100%;
+             float: left;
+             background-color: #9F1483;
+             margin: 17.5px;
+             border-radius: 15px;
+             padding: 25px;
+             box-shadow: 0px 0px 5px gray;
+             align-content: center;
+             text-align: center;
+         }
+         
+         .friend1, .friend2, .friend3 {
+             width: 30%;
+         }
+         
+         .profile-pic {
+             width: 170px;
+             height: 170px;
+         }
+         
+         h3 {
+             font-family: 'Patrick Hand', sans-serif;
+             font-size: 30px;
+             color: #F4DCFF;
+             margin-bottom: 10px;
+         }
+         
+         @media (max-width: 757px) {
+             body {
+                 margin-left: 10px;
+             }
+             
+             h1 {
+                 font-size: 30px;
+             }
+             
+             .profile-pic {
+                 width: 100px;
+                height: 100px;
+             }
+             
+             .col-sm-4 {
+                 width: 100%;
+                 margin: 5px;
+                 border-radius: 15px;
+                 padding: 25px;
+                 box-shadow: 0px 0px 5px gray;
+                 align-content: center;
+                 text-align: center;
+             }
+             
+             .add_btn {
+             width: 95%;
+             margin-left: 15px;
+             margin-right: 30px;
+             margin-top: 20px;
+             }
+         }
+     </style>
+    </head>
+     
+    <body>
+        <div class="container">
+            <table>
+                <tr>
+                    <td><img class="page_header" src="https://lh3.googleusercontent.com/f-RIKaN3rjLRK4qJY_xLlwSDUKaxeDht4fBmrYENdj5mLW5iwCBRcnqf3Furz5IoemFFnTC6HWLb2eIn30iIFU2uxKsReIGHpXnA2qo-wIGIt1gomHOpgDNDsnpSxy5-W1V-HTkSuQ" alt="My Little Phony Logo" width="200"></td>
+                    <td><h1 style="float: right; padding-top: 10px; margin-right: 50px;">Friendship Log</h1></td>
+                </tr>
+            </table>
+            <hr>
+            
+            
+            
+            <form action="#" method="POST">
+                <input type="submit" value="Add" class="btn" style="float: right;">
+            <h2>Details</h2>
+                <div class="my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                    <label for="txtname" class="form-label">Friend's Name</label>
+                    <input id="txtname" class="form-control" type="text" name="name">
+                </div>
+                <div class="my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope-paper-heart-fill" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                      <path fill-rule="evenodd" d="m3 7.5 3.5 2L8 8.75l1.5.75 3.5-2v-6A1.5 1.5 0 0 0 11.5 0h-7A1.5 1.5 0 0 0 3 1.5v6ZM2 3.133l-.941.502A2 2 0 0 0 0 5.4v.313l2 1.173V3.133Zm12 3.753 2-1.173V5.4a2 2 0 0 0-1.059-1.765L14 3.133v3.753Zm-3.693 3.324L16 6.873v6.5l-5.693-3.163Zm5.634 4.274L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM5.693 10.21 0 13.372v-6.5l5.693 3.338ZM8 1.982C9.664.309 13.825 3.236 8 7 2.175 3.236 6.336.31 8 1.982Z"/>
+                    </svg>
+                    <label for="txtemail" class="form-label">Email Address</label>
+                    <input id="txtemail" class="form-control" type="text" name="email">
+                </div>
+                <div class="my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-phone-vibrate-fill" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                      <path d="M4 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4zm5 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0zM1.807 4.734a.5.5 0 1 0-.884-.468A7.967 7.967 0 0 0 0 8c0 1.347.334 2.618.923 3.734a.5.5 0 1 0 .884-.468A6.967 6.967 0 0 1 1 8c0-1.18.292-2.292.807-3.266zm13.27-.468a.5.5 0 0 0-.884.468C14.708 5.708 15 6.819 15 8c0 1.18-.292 2.292-.807 3.266a.5.5 0 0 0 .884.468A7.967 7.967 0 0 0 16 8a7.967 7.967 0 0 0-.923-3.734zM3.34 6.182a.5.5 0 1 0-.93-.364A5.986 5.986 0 0 0 2 8c0 .769.145 1.505.41 2.182a.5.5 0 1 0 .93-.364A4.986 4.986 0 0 1 3 8c0-.642.12-1.255.34-1.818zm10.25-.364a.5.5 0 0 0-.93.364c.22.563.34 1.176.34 1.818 0 .642-.12 1.255-.34 1.818a.5.5 0 0 0 .93.364C13.856 9.505 14 8.769 14 8c0-.769-.145-1.505-.41-2.182z"/>
+                    </svg>
+                    <label for="txtcellnum" class="form-label">Phone Number</label>
+                    <input id="txtcellnum" class="form-control" type="text" name="cellnum">
+                </div>
+                <div class="my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-house-heart-fill" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                        <path fill-rule="evenodd" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L8 2.207l6.646 6.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Zm0 5.189c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+                    </svg>
+                    <label for="txtaddress" class="form-label">Home Address</label>
+                    <input id="txtaddress" class="form-control" type="text" name="address">
+                </div>
+            </form>
+            
+            <hr style="border-top: 2px solid #FD3F98; border-radius: 5px; margin-top: 40px; margin-bottom: 20px;">
+            
+            <h1>Buzz your other friends</h1>
+            <div class="other_friends"> 
+                    <div class="friend1 col-sm-4">
+                        <h3>Apple Jack</h3>
+                        <a href="#"><img  class="profile-pic" src="https://static.wikia.nocookie.net/mlpfimroleplay/images/7/79/Applejack.png/revision/latest?cb=20160402180635" alt="Apple Jack"></a>
+                    </div>
+                    <div class="friend2 col-sm-4">
+                        <h3>Princess Luna</h3>
+                        <a href="#"><img  class="profile-pic" src="https://i.pinimg.com/originals/de/43/9d/de439d74d659162d6540efd6c1bcd88f.png" alt="Princess Luna"></a>
+                    </div>
+                    <div class="friend3 col-sm-4">
+                        <h3>Pinkie Pie</h3>
+                        <a href="#"><img  class="profile-pic" src="https://static.wikia.nocookie.net/theunitedorganizationtoonsheroes/images/8/8c/Pinke_Pie.png/revision/latest?cb=20160306235923" alt="Pinkie Pie"></a>
+                    </div>
+            </div>
+            <button id="newFriend" class="add_btn">+ Add new friend</button>
+        </div>
+    </body>
+</html>
